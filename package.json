@@ -1,0 +1,34 @@
+{
+  "name": "react-entanglement-adapter-boilerplate",
+  "version": "1.0.0",
+  "description": "WIP: Will be boilerplate for easily creating more adapters",
+  "main": "index.js",
+  "scripts": {
+    "build": "sagui build",
+    "develop": "sagui develop --port 3000",
+    "dist": "NODE_ENV=production sagui build --optimize",
+    "start": "npm run develop",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:coverage": "npm run test:unit -- --coverage",
+    "test:lint": "sagui lint",
+    "test:unit": "NODE_ENV=test sagui test",
+    "test:unit:watch": "npm run test:unit -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-entanglement/adapter-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/react-entanglement/adapter-boilerplate/issues"
+  },
+  "homepage": "https://github.com/react-entanglement/adapter-boilerplate#readme",
+  "devDependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-entanglement": "^0.3.3",
+    "sagui": "^6.1.0"
+  }
+}
